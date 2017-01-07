@@ -4,6 +4,7 @@ var Array=function(){
 	_.extend(instance,arrayMethods);
 	return instance;
 };
+var arrayMethods={};
 arrayMethods.first=function(){
 	if(this.arr.length>0){
 	return this.arr[0];

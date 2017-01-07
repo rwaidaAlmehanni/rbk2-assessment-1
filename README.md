@@ -75,18 +75,18 @@ Solutions are submitted via [Pull Request](https://help.github.com/articles/usin
 Each assessment contains folders that correspond to the prompts listed below. Complete the instructions in the file, `README.md` within each folder (reproduced below).
 
 ### Hash Table Collision Resolution
-* [ ] Implement collision resolution for the working hash table in `hashTable.js`
+* [ *] Implement collision resolution for the working hash table in `hashTable.js`
 
 ### Data Structures
-* [ ] Describe the difference between a stack and a queue and give examples of when you might use them.
+* [ *] Describe the difference between a stack and a queue and give examples of when you might use them.
 
 ### Stack
-* [ ] Implement a stack class.
+* [ *] Implement a stack class.
   * You can use an array for storage, and delegate to its methods
   * The stack should only have `.add` and `.remove`, no other properties or methods (you can test this by calling Object.keys() on your stack instance).
 
 ### Instantiation Patterns
-* [ ] Extend the native `Array` class to have these useful functions:
+* [ *] Extend the native `Array` class to have these useful functions:
   * `.first` - Returns the first element of the array
   * `.last` - Returns the last element of the array
 

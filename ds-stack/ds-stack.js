@@ -1,10 +1,13 @@
 var Stack = function() {
-	this._storage=[];
+	var instance=Object.create(methods)
+	instance._storage=[];
+	return instance;
 };
-Stack.prototype.add=function(value){
+var methods={};
+methods.add=function(value){
 	this._storage.push(value);
 }
-Stack.prototype.remove=function(){ //first out the last in ...
+methods.remove=function(){ //first out the last in ...
 	if(this._storage.length>0){
 	var x=this._storage.pop();
        }else{
@@ -12,3 +15,19 @@ Stack.prototype.remove=function(){ //first out the last in ...
        }
 	return x;
 }
+//another way ...
+var Stack2 = function() {
+	this._storage=[];
+};
+Stack2.prototype.add=function(value){
+	this._storage.push(value);
+}
+Stack2.prototype.remove=function(){ //first out the last in ...
+	if(this._storage.length>0){
+	var x=this._storage.pop();
+       }else{
+       	return "the stack is empty...";
+       }
+	return x;
+}
+
